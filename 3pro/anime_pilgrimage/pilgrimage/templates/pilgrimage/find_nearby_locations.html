@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>聖地ピン表示</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbVBPDaX1wpt14MoKrWlvxIOoL6K0oRU0"></script>
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>聖地の場所</h1>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var center = {lat: 35.6895, lng: 139.6917}; // 東京駅の位置
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: center
+            });
+
+            {% for location in locations %}
+            var marker = new google.maps.Marker({
+                position: {lat: {{ location.latitude }}, lng: {{ location.longitude }}},
+                map: map,
+                title: '{{ location.name }}'
+            });
+
+            var infowindow = new google.maps.InfoWindow({
+                content: '<div><h2>{{ location.name }}</h2><p>{{ location.address }}</p></div>'
+            });
+
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+            {% endfor %}
+        }
+
+        // 地図を初期化
+        window.onload = initMap;
+    </script>
+</body>
+</html>

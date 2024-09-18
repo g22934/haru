@@ -1,0 +1,956 @@
+{
+   "geocoded_waypoints" : 
+   [
+      {
+         "geocoder_status" : "OK",
+         "partial_match" : true,
+         "place_id" : "ChIJH7qx1tCMGGAR1f2s7PGhMhw",
+         "types" : 
+         [
+            "establishment",
+            "point_of_interest",
+            "subway_station",
+            "train_station",
+            "transit_station"
+         ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "partial_match" : true,
+         "place_id" : "ChIJjy74H-qMGGARg-JemzJo98Q",
+         "types" : 
+         [
+            "cafe",
+            "establishment",
+            "food",
+            "point_of_interest",
+            "restaurant"
+         ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "partial_match" : true,
+         "place_id" : "ChIJzcr8rpaMGGARrj2DaL4S0Hk",
+         "types" : 
+         [
+            "establishment",
+            "museum",
+            "point_of_interest",
+            "tourist_attraction"
+         ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "partial_match" : true,
+         "place_id" : "ChIJ8VLVBuTsGGARfIDGqQDmC0Q",
+         "types" : 
+         [
+            "establishment",
+            "place_of_worship",
+            "point_of_interest",
+            "tourist_attraction"
+         ]
+      }
+   ],
+   "routes" : 
+   [
+      {
+         "bounds" : 
+         {
+            "northeast" : 
+            {
+               "lat" : 35.6899392,
+               "lng" : 139.7232067
+            },
+            "southwest" : 
+            {
+               "lat" : 35.6770816,
+               "lng" : 139.7020212
+            }
+         },
+         "copyrights" : "Map data ©2024 Google",
+         "legs" : 
+         [
+            {
+               "distance" : 
+               {
+                  "text" : "1.0 km",
+                  "value" : 1049
+               },
+               "duration" : 
+               {
+                  "text" : "4 mins",
+                  "value" : 230
+               },
+               "end_address" : "Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 1-chōme−1−７ コスモ新宿御苑ビル 1F・2F",
+               "end_location" : 
+               {
+                  "lat" : 35.6875606,
+                  "lng" : 139.7127313
+               },
+               "start_address" : "Shinjuku Station, 3-chōme-38-1 Shinjuku, Shinjuku City, Tokyo 160-0022, Japan",
+               "start_location" : 
+               {
+                  "lat" : 35.6896695,
+                  "lng" : 139.7020212
+               },
+               "steps" : 
+               [
+                  {
+                     "distance" : 
+                     {
+                        "text" : "7 m",
+                        "value" : 7
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 3
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6896283,
+                        "lng" : 139.702086
+                     },
+                     "html_instructions" : "Head \u003cb\u003esoutheast\u003c/b\u003e on \u003cb\u003e新宿ランブリングロード\u003c/b\u003e toward \u003cb\u003e武蔵野通り\u003c/b\u003e",
+                     "polyline" : 
+                     {
+                        "points" : "msyxEsptsYFM"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6896695,
+                        "lng" : 139.7020212
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.1 km",
+                        "value" : 119
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 62
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6897228,
+                        "lng" : 139.7032782
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e at \u003cb\u003e武蔵野通り\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : 
+                     {
+                        "points" : "esyxEaqtsYB?@?Gk@M_AAGEi@ACI_A@ANI"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6896283,
+                        "lng" : 139.702086
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.1 km",
+                        "value" : 118
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 31
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6898642,
+                        "lng" : 139.7045713
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e甲州街道\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e国道20号\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "wsyxEoxtsYCe@C[Cc@Eu@EWAk@Aa@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6897228,
+                        "lng" : 139.7032782
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.2 km",
+                        "value" : 174
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 34
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.68948779999999,
+                        "lng" : 139.7063476
+                     },
+                     "html_instructions" : "Take the exit toward \u003cb\u003eShinjukugyoen\u003c/b\u003e",
+                     "maneuver" : "ramp-left",
+                     "polyline" : 
+                     {
+                        "points" : "styxEq`usYIOAIAMAk@?U@M@I@MBQBUDSLg@FUBGL[Rc@HQ"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6898642,
+                        "lng" : 139.7045713
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.6 km",
+                        "value" : 622
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 84
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6874822,
+                        "lng" : 139.7127077
+                     },
+                     "html_instructions" : "Keep \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "keep-left",
+                     "polyline" : 
+                     {
+                        "points" : "iryxEukusYT]RYVg@@CZu@FQJYHSFQDODOFUDQJi@@C@ELm@P{@Je@@Gd@uBH_@@KBM?ABQT{B`@wDBO@IBKBSX{AXiB"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.68948779999999,
+                        "lng" : 139.7063476
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "9 m",
+                        "value" : 9
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 16
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6875606,
+                        "lng" : 139.7127313
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "weyxEmsvsYOC"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6874822,
+                        "lng" : 139.7127077
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            },
+            {
+               "distance" : 
+               {
+                  "text" : "2.1 km",
+                  "value" : 2089
+               },
+               "duration" : 
+               {
+                  "text" : "8 mins",
+                  "value" : 482
+               },
+               "end_address" : "1-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan",
+               "end_location" : 
+               {
+                  "lat" : 35.67844290000001,
+                  "lng" : 139.7178355
+               },
+               "start_address" : "Japan, 〒160-0022 Tokyo, Shinjuku City, Shinjuku, 1-chōme−1−７ コスモ新宿御苑ビル 1F・2F",
+               "start_location" : 
+               {
+                  "lat" : 35.6875606,
+                  "lng" : 139.7127313
+               },
+               "steps" : 
+               [
+                  {
+                     "distance" : 
+                     {
+                        "text" : "9 m",
+                        "value" : 9
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 3
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6874822,
+                        "lng" : 139.7127077
+                     },
+                     "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e",
+                     "polyline" : 
+                     {
+                        "points" : "gfyxEqsvsYNB"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6875606,
+                        "lng" : 139.7127313
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.2 km",
+                        "value" : 162
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 41
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6878939,
+                        "lng" : 139.7140535
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003e新宿通り\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e旧甲州街道\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "weyxEmsvsYHg@@M@K@I@K@M?M?K?OAy@?EAEACAEACACAACCAACAECICk@QA?O?"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6874822,
+                        "lng" : 139.7127077
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.2 km",
+                        "value" : 174
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 43
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6875747,
+                        "lng" : 139.7159354
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at \u003cb\u003e新宿一丁目（交差点）\u003c/b\u003e onto \u003cb\u003e新宿通り\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e旧甲州街道\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow 新宿通り\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "ihyxEy{vsYPuA?APuADc@L{@@OBS?K?C?_@?A@U"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6878939,
+                        "lng" : 139.7140535
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.4 km",
+                        "value" : 397
+                     },
+                     "duration" : 
+                     {
+                        "text" : "2 mins",
+                        "value" : 91
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6880161,
+                        "lng" : 139.7202949
+                     },
+                     "html_instructions" : "Continue straight through \u003cb\u003e四谷四丁目（交差点）\u003c/b\u003e onto \u003cb\u003e新宿通り\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e国道20号\u003c/b\u003e (signs for \u003cb\u003eNihonbashi\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eHanzomon\u003c/b\u003e)",
+                     "maneuver" : "straight",
+                     "polyline" : 
+                     {
+                        "points" : "ifyxEsgwsYEg@CYEq@Cg@CSIyAEcAAg@AMEaAGsAM}CAG?IAGCq@A]AUACCi@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6875747,
+                        "lng" : 139.7159354
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.9 km",
+                        "value" : 927
+                     },
+                     "duration" : 
+                     {
+                        "text" : "3 mins",
+                        "value" : 166
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6798769,
+                        "lng" : 139.7196069
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at \u003cb\u003e四谷三丁目（交差点）\u003c/b\u003e onto \u003cb\u003e外苑東通り\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e都道319号\u003c/b\u003e (signs for \u003cb\u003eShinanomachi\u003c/b\u003e)",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "ciyxEybxsYAU\\@lADP?f@BV@P@`@@TBL@F@T@dAFf@BH?bERR@b@BZ@`AF`@DjANJ@l@Hb@Fz@JXBb@FH@f@Fb@Dt@FH?PBN@B@x@Hl@DPBr@HP@J@H?D@F@PC^OHCJELGZO"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6880161,
+                        "lng" : 139.7202949
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "50 m",
+                        "value" : 50
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 16
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6799319,
+                        "lng" : 139.7190614
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003e都道414号\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "gvwxEq~wsYAZE~@AP"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6798769,
+                        "lng" : 139.7196069
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.2 km",
+                        "value" : 189
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 54
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.678295,
+                        "lng" : 139.7193241
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e都道414号\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eParts of this road may be closed at certain times or days\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "qvwxEc{wsYL@PBDCDAB?D?d@FH@N?F?\\BT@XI`Bm@VK"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6799319,
+                        "lng" : 139.7190614
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "70 m",
+                        "value" : 70
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 31
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6780621,
+                        "lng" : 139.7186051
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "klwxEw|wsYNp@Nj@F^FN"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.678295,
+                        "lng" : 139.7193241
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "63 m",
+                        "value" : 63
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6785837,
+                        "lng" : 139.7183405
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "{jwxEixwsY]RA?s@VKFA?A@A?A?"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6780621,
+                        "lng" : 139.7186051
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "48 m",
+                        "value" : 48
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 13
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.67844290000001,
+                        "lng" : 139.7178355
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "cnwxEsvwsY@R@FBJJd@FT"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6785837,
+                        "lng" : 139.7183405
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            },
+            {
+               "distance" : 
+               {
+                  "text" : "1.7 km",
+                  "value" : 1661
+               },
+               "duration" : 
+               {
+                  "text" : "7 mins",
+                  "value" : 406
+               },
+               "end_address" : "5-6 Sugachō, Shinjuku City, Tokyo 160-0018, Japan",
+               "end_location" : 
+               {
+                  "lat" : 35.6851412,
+                  "lng" : 139.7228751
+               },
+               "start_address" : "1-1 Kasumigaokamachi, Shinjuku City, Tokyo 160-0013, Japan",
+               "start_location" : 
+               {
+                  "lat" : 35.67844290000001,
+                  "lng" : 139.7178355
+               },
+               "steps" : 
+               [
+                  {
+                     "distance" : 
+                     {
+                        "text" : "48 m",
+                        "value" : 48
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 12
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6785837,
+                        "lng" : 139.7183405
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e toward \u003cb\u003e都道414号\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e",
+                     "polyline" : 
+                     {
+                        "points" : "gmwxEoswsYGUKe@CKAGAS"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.67844290000001,
+                        "lng" : 139.7178355
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "63 m",
+                        "value" : 63
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 26
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6780621,
+                        "lng" : 139.7186051
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003e都道414号\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "cnwxEsvwsY@?@?@A@?JGr@W@?\\S"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6785837,
+                        "lng" : 139.7183405
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "70 m",
+                        "value" : 70
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.678295,
+                        "lng" : 139.7193241
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003e都道414号\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "{jwxEixwsYGOG_@Ok@Oq@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6780621,
+                        "lng" : 139.7186051
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "89 m",
+                        "value" : 89
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 17
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6775474,
+                        "lng" : 139.71969
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003e都道414号\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eMay be closed at certain times or days\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "klwxEw|wsYf@SNGNGx@[RI"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.678295,
+                        "lng" : 139.7193241
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.1 km",
+                        "value" : 131
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 35
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6771535,
+                        "lng" : 139.7209144
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003e都道414号\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eMay be closed at certain times or days\u003c/div\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : 
+                     {
+                        "points" : "ugwxEa_xsYFIHGBC@ABCFIPWDIDIHUDSDO@A@O@K?GASAE?C@C?CEOACCG"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6775474,
+                        "lng" : 139.71969
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.9 km",
+                        "value" : 852
+                     },
+                     "duration" : 
+                     {
+                        "text" : "3 mins",
+                        "value" : 162
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.684492,
+                        "lng" : 139.7199487
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at \u003cb\u003e権田原（交差点）\u003c/b\u003e onto \u003cb\u003e外苑東通り\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003e都道319号\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "eewxEufxsYe@RMFKDOHID_@NEBKDwAl@aA`@i@T_@PgAb@IDa@POFo@VMFQFSHUHE@E@A@E@KBM@S?[Cs@Iq@Ig@GC?MCE?IASCQC_AMoAOg@GYEaBSi@EKCc@Ek@G_@E_AE"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6771535,
+                        "lng" : 139.7209144
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.1 km",
+                        "value" : 132
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 50
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6843768,
+                        "lng" : 139.7214001
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at \u003cb\u003e左門町（交差点）\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "asxxEu`xsY?U@Y@W@a@@W?IDaA?IDm@@["
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.684492,
+                        "lng" : 139.7199487
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.1 km",
+                        "value" : 140
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 39
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6841606,
+                        "lng" : 139.7229257
+                     },
+                     "html_instructions" : "Continue straight",
+                     "maneuver" : "straight",
+                     "polyline" : 
+                     {
+                        "points" : "krxxEwixsYBQBSB]Ba@B[Di@PeC"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6843768,
+                        "lng" : 139.7214001
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "86 m",
+                        "value" : 86
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 21
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6848929,
+                        "lng" : 139.723199
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "_qxxEisxsY]K]KMEKCCAGAGCICICMCAAA?A@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6841606,
+                        "lng" : 139.7229257
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "38 m",
+                        "value" : 38
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 13
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6850436,
+                        "lng" : 139.7228207
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "quxxE_uxsYA@A@YfA"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6848929,
+                        "lng" : 139.723199
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "12 m",
+                        "value" : 12
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 7
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 35.6851412,
+                        "lng" : 139.7228751
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eRestricted usage road\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "ovxxEsrxsYSK"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 35.6850436,
+                        "lng" : 139.7228207
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : 
+         {
+            "points" : "msyxEsptsYJM@?Gk@OgAGm@I_A@ANICe@G_AKmACmAKYCy@@c@J_A^yA`@_A^o@j@aA\\y@d@qAXgAbBaIN{@~@uIb@eCXiBOCNBHg@BYBU@w@EiAGOOKu@UQ?h@qER_B?q@C}@IkAWyEQkE[aHE_AjBFbBFlAHlCLvGZbBLvAPfD`@xBV~Eb@zALLBPC^OTIh@WGzAAPL@PBDCHAdAHd@BT@XIxBy@^|ANn@_@RcA`@C?BZNp@FTGUOq@C[FA~As@o@mC`C_ARIFILK^g@JSNi@Jm@Ce@@GGSCGe@RYL_Ab@oEjBsF|Bu@Va@Ho@CeBS_AKcJiAeCW_BK@o@D{ALuCNeBHeAPeC]Kk@QOEc@MQECBA@YfASK"
+         },
+         "summary" : "甲州街道/国道20号",
+         "warnings" : [],
+         "waypoint_order" : 
+         [
+            0,
+            1
+         ]
+      }
+   ],
+   "status" : "OK"
+}

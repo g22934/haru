@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聖地の場所とルート</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDICU3y7xCgmWX7lW2vL-KJW_ESuN3iooQ" async defer></script>
+
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+        .input-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>聖地の場所とルート</h1>
+    <div class="input-container">
+        <input type="text" id="centerAddress" placeholder="中心点の住所">
+        <button onclick="applyFilter()">フィルター適用</button>
+        <div>
+            <label for="destination">目的地:</label>
+            <select id="destination"></select>
+        </div>
+        <button onclick="calculateRoute()">ルートを表示</button>
+    </div>
+    <div id="map"></div>
+
+    <script>
+        let map;
+        let markers = [];
+        let circle;
+        let destinations = [];
+        let directionsService;
+        let directionsRenderer;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: {lat: 35.6895, lng: 139.6917} // 東京駅の位置
+            });
+
+            directionsService = new google.maps.DirectionsService();
+            directionsRenderer = new google.maps.DirectionsRenderer();
+            directionsRenderer.setMap(map);
+        }
+
+        function applyFilter() {
+            const centerAddress = document.getElementById('centerAddress').value;
+
+            fetch('/filter_locations/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': getCookie('csrftoken')
+                },
+                body: JSON.stringify({ centerAddress, radius: 10 }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+                updateMap(data.center, data.locations);
+                updateDestinations(data.locations);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function updateMap(center, locations) {
+            markers.forEach(marker => marker.setMap(null));
+            markers = [];
+            if (circle) circle.setMap(null);
+
+            map.setCenter(center);
+            map.setZoom(12);
+
+            new google.maps.Marker({
+                position: center,
+                map: map,
+                icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            });
+
+            locations.forEach(location => {
+                const marker = new google.maps.Marker({
+                    position: {lat: location.latitude, lng: location.longitude},
+                    map: map,
+                    title: location.name
+                });
+
+                const infowindow = new google.maps.InfoWindow({
+                    content: `<div><h2>${location.name}</h2><p>${location.address}</p></div>`
+                });
+
+                marker.addListener('click', () => infowindow.open(map, marker));
+                markers.push(marker);
+
+                destinations.push({
+                    name: location.name,
+                    latitude: location.latitude,
+                    longitude: location.longitude
+                });
+            });
+
+            circle = new google.maps.Circle({
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35,
+                map: map,
+                center: center,
+                radius: 10000
+            });
+        }
+
+        function updateDestinations(locations) {
+            const select = document.getElementById('destination');
+            select.innerHTML = '<option value="">目的地を選択してください</option>';
+            locations.forEach(location => {
+                const option = document.createElement('option');
+                option.value = JSON.stringify({ lat: location.latitude, lng: location.longitude });
+                option.textContent = location.name;
+                select.appendChild(option);
+            });
+        }
+
+        function calculateRoute() {
+            const destination = JSON.parse(document.getElementById('destination').value);
+
+            if (!destination) {
+                alert('目的地を選択してください');
+                return;
+            }
+
+            const start = new google.maps.LatLng(map.getCenter().lat, map.getCenter().lng);
+            const end = new google.maps.LatLng(destination.lat, destination.lng);
+
+            const request = {
+                origin: start,
+                destination: end,
+                travelMode: 'DRIVING'
+            };
+
+            directionsService.route(request, (result, status) => {
+                if (status === 'OK') {
+                    directionsRenderer.setDirections(result);
+                } else {
+                    alert('ルートの取得に失敗しました');
+                }
+            });
+        }
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        window.onload = initMap;
+    </script>
+</body>
+</html>

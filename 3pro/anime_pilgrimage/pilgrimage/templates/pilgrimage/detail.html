@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title.name }}の聖地巡礼情報</title>
+</head>
+<body>
+    <h1>{{ title.name }}</h1>
+    <p>{{ title.description }}</p>
+    {% if title.image %}
+        <img src="{{ title.image.url }}" alt="{{ title.name }}">
+    {% endif %}
+
+    <h2>聖地巡礼の場所</h2>
+    <ul>
+    {% for location in locations %}
+        <li>
+            <strong>{{ location.name }}</strong> ({{ location.address }})
+            {% if location.image %}
+                <img src="{{ location.image.url }}" alt="{{ location.name }}">
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

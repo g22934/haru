@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Route</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU1cXfRrjHts2XsDkhSJGKzND9RQBtePA"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function initMap() {
+            // 地図の中心点を設定
+            var mapOptions = {
+                zoom: 7,
+                center: { lat: 35.6895, lng: 139.6917 } // 東京の座標
+            };
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            var directionsService = new google.maps.DirectionsService();
+            var directionsRenderer = new google.maps.DirectionsRenderer();
+            directionsRenderer.setMap(map);
+
+            // route.jsonからデータを読み込み
+            $.getJSON('route.json', function(data) {
+                var route = data.routes[0];
+                var legs = route.legs;
+                var waypoints = [];
+                for (var i = 1; i < legs.length - 1; i++) {
+                    waypoints.push({
+                        location: legs[i].start_location,
+                        stopover: true
+                    });
+                }
+
+                // 経路表示のリクエストを作成
+                var request = {
+                    origin: legs[0].start_address,
+                    destination: legs[legs.length - 1].end_address,
+                    waypoints: waypoints,
+                    travelMode: 'DRIVING'
+                };
+
+                // 経路表示のリクエストを送信
+                directionsService.route(request, function(result, status) {
+                    if (status == 'OK') {
+                        directionsRenderer.setDirections(result);
+                    } else {
+                        window.alert('Directions request failed due to ' + status);
+                    }
+                });
+            });
+        }
+
+        $(document).ready(function() {
+            initMap();
+        });
+    </script>
+    <style>
+        #map {
+            height: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
